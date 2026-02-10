@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourab Khan | Data Analyst Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f9fc;
+      color: #222;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    /* Card Style */
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Profile */
+    .profile {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      text-align: left;
+    }
+
+    .profile img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #2563eb;
+    }
+
+    .profile h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .role {
+      font-size: 0.9rem;
+      color: #2563eb;
+    }
+
+    .location {
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    /* Social */
+    .social a {
+      font-size: 1.2rem;
+      margin-right: 10px;
+      color: #2563eb;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #1e40af;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1e40af;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    /* About */
+    .about p {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      background: #eef2ff;
+      color: #1e40af;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* Projects */
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      font-size: 1rem;
+      color: #1e40af;
+      margin-bottom: 6px;
+    }
+
+    .project p {
+      font-size: 0.85rem;
+      color: #444;
+    }
+
+    .project-tags span {
+      background: #eef2ff;
+      color: #1e40af;
+      padding: 4px 8px;
+      border-radius: 15px;
+      font-size: 0.7rem;
+      margin-right: 5px;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* Education */
+    .education h3 {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .education p {
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media(max-width: 700px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+        <!-- Profile + About + Skills -->
+    <div class="card">
+
+      <!-- Profile -->
+      <div class="profile">
+
+        <img src="profile.jpg" alt="Profile">
+
+        <div>
+          <h1>Sourab Khan</h1>
+          <div class="role">Data Analyst</div>
+          <div class="location">📍 Pune, Maharashtra, India</div>
+
+          <div class="social" style="margin-top:8px;">
+            <a href="https://www.linkedin.com/in/sourabkhan" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SourabKhan" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:sourabkhan1904@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- About -->
+      <div style="margin-top:20px;">
+        <div class="section-title">ABOUT</div>
+        <div class="about">
+          <p>
+            Data Analyst skilled in Python, SQL, Power BI, and Excel. Passionate about data-driven insights,
+            visualization, and problem-solving. Experienced in business intelligence projects.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div style="margin-top:20px;">
+        <div class="section-title">SKILLS</div>
+        <div class="skills">
+          <div class="skill">Python</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Excel</div>
+          <div class="skill">Power BI</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Projects -->
+    <div class="card project">
+      <div class="section-title">PROJECTS</div>
+
+      <img src="ola.png" alt="Project">
+
+      <h3>OLA Ride Analytics Dashboard</h3>
+
+      <div class="project-tags">
+        <span>Power BI</span>
+        <span>DAX</span>
+        <span>Power Query</span>
+        <span>Modeling</span>
+      </div>
+
+      <p>
+        Built an interactive Power BI dashboard to analyze bookings, revenue, riders,
+        and locations with dynamic KPIs.
+      </p>
+
+      <a href="https://github.com/SourabKhan/Uber-Data-Analytics-Dashboard-in-Power-Bi" target="_blank">Read more →</a>
+    </div>
+
+    <!-- Education -->
+    <div class="card education">
+      <div class="section-title">EDUCATION</div>
+
+      <h3>Master of Computer Application (MCA)</h3>
+      <p>Trinity Academy of Engineering, Pune</p>
+      <p>2024</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
