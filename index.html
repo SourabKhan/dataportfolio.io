@@ -118,10 +118,13 @@
 
     /* Projects */
     .project img {
-      width: 100%;
+      width: 70%;          /* control size here */
+      max-width: 350px;    /* prevents too big images */
+      display: block;
+      margin: 0 auto 10px; /* center image */
       border-radius: 10px;
-      margin-bottom: 10px;
     }
+
 
     .project h3 {
       font-size: 1rem;
@@ -267,7 +270,7 @@
 
     <!-- Project 3 -->
     <div class="card project">
-      <img src="images/xyz.png" alt="uber">
+      <img src="images/uber.png" alt="uber">
 
       <h3>Uber Ride Analytics Dashboard</h3>
 
