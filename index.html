@@ -21,65 +21,16 @@ body{
   color:#222;
 }
 
-/* ========================= */
-/* TOP BANNER */
-/* ========================= */
-
-.top-banner{
-  max-width:1200px;
-  margin:30px auto 0 auto;
-  background:#ffffff;
-  border:1px solid #e5e7eb;
-  border-radius:14px;
-  padding:20px 25px;
-  display:flex;
-  align-items:center;
-  gap:20px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
-}
-
-.top-banner img{
-  width:95px;
-  height:95px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #e5e7eb;
-}
-
-.banner-text h1{
-  font-size:1.9rem;
-}
-
-.banner-role{
-  color:#2563eb;
-  font-weight:600;
-  margin:6px 0;
-}
-
-.top-banner a{
-  text-decoration:none;
-  color:#777;
-  font-size:0.9rem;
-}
-
-.top-banner a:hover{
-  color:#2563eb;
-}
-
-/* ========================= */
 /* MAIN LAYOUT */
-/* ========================= */
-
 .main{
   display:flex;
   max-width:1200px;
-  margin:30px auto;
-  padding:0 15px 40px;
+  margin:auto;
+  padding:30px 15px;
   gap:30px;
 }
 
 /* LEFT SIDE */
-
 .left{
   flex:1;
 }
@@ -151,20 +102,18 @@ body{
 }
 
 /* RIGHT SIDE */
-
 .right{
   flex:2;
 }
 
-/* PROJECT GRID */
-
+/* PROJECT GRID - Mobile First */
 .projects-grid{
   display:grid;
-  grid-template-columns:1fr; /* Mobile default */
+  grid-template-columns:1fr; /* Mobile */
   gap:20px;
 }
 
-/* Desktop Grid */
+/* Desktop = 2 columns */
 @media (min-width:900px){
   .projects-grid{
     grid-template-columns:repeat(2,1fr);
@@ -221,7 +170,7 @@ body{
   margin-top:30px;
 }
 
-/* MOBILE STACK */
+/* STACK LAYOUT FOR MOBILE */
 @media(max-width:900px){
   .main{
     flex-direction:column;
@@ -231,31 +180,11 @@ body{
     position:relative;
     top:0;
   }
-
-  .top-banner{
-    flex-direction:column;
-    text-align:center;
-  }
 }
 </style>
 </head>
 
 <body>
-
-<!-- ================= TOP BANNER ================= -->
-
-<div class="top-banner">
-  <img src="images/photo.jpg" alt="Sourab Khan">
-  <div class="banner-text">
-    <h1>Sourab Khan</h1>
-    <div class="banner-role">Data Analyst</div>
-    <a href="https://sourabkhan.github.io/dataportfolio.io/" target="_blank">
-      sourabkhan.github.io
-    </a>
-  </div>
-</div>
-
-<!-- ================= MAIN ================= -->
 
 <div class="main">
 
@@ -298,28 +227,28 @@ body{
   <div class="projects-grid">
 
     <div class="card project">
-      <img src="images/datawarehouse.jpg">
+      <img src="images/datawarehouse.jpg" alt="">
       <h3>Data Warehouse & SQL Analytics</h3>
       <p>Built modern data warehouse with optimized ETL pipelines.</p>
       <a href="https://github.com/SourabKhan/sql-data-warehouse-project" target="_blank">View Project →</a>
     </div>
 
     <div class="card project">
-      <img src="images/zomato.jpg">
+      <img src="images/zomato.jpg" alt="">
       <h3>Zomato Data Analysis</h3>
       <p>Performed EDA and pricing analysis using Python.</p>
       <a href="https://github.com/SourabKhan/Zomato-Data-Analysis-Project" target="_blank">View Project →</a>
     </div>
 
     <div class="card project">
-      <img src="images/uber.jpg">
+      <img src="images/uber.jpg" alt="">
       <h3>Uber Analytics Dashboard</h3>
       <p>Interactive Power BI dashboards with KPIs and location analysis.</p>
       <a href="https://github.com/SourabKhan/Uber-Data-Analytics-Dashboard-in-Power-Bi" target="_blank">View Project →</a>
     </div>
 
     <div class="card project">
-      <img src="images/pizza.jpg">
+      <img src="images/pizza.jpg" alt="">
       <h3>Pizza Sales Analysis</h3>
       <p>Analyzed pizza store sales data using SQL and Power BI to deliver actionable insights.</p>
       <a href="https://github.com/SourabKhan/Pizza-Sales-Analysis" target="_blank">View Project →</a>
