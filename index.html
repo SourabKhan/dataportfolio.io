@@ -71,6 +71,7 @@ body{
   font-size:1.2rem;
   margin-right:10px;
   color:#777;
+  transition:0.3s;
 }
 
 .social a:hover{
@@ -104,10 +105,25 @@ body{
   flex:2;
 }
 
+/* PROJECT GRID - Mobile First */
 .projects-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:1fr;
   gap:20px;
+}
+
+/* Tablet */
+@media (min-width:768px){
+  .projects-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width:1100px){
+  .projects-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 
 .card{
@@ -116,16 +132,21 @@ body{
   border-radius:12px;
   padding:20px;
   box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  transition:0.3s;
 }
 
- .project img {
-  width: 100%;
-  aspect-ratio: 16 / 9;        /* fixed height */
-  object-fit: cover;    /* fills full card */
-  object-position: center;
-  border-radius: 10px;
-  margin-bottom: 12px;
-} 
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:12px;
+}
 
 .project h3{
   font-size:1rem;
@@ -137,22 +158,17 @@ body{
   color:#444;
 }
 
-.project-tags span{
-  background:#eef2ff;
-  color:#1e40af;
-  padding:4px 8px;
-  border-radius:15px;
-  font-size:0.7rem;
-  margin-right:5px;
-}
-
 .project a{
   display:inline-block;
-  margin-top:6px;
-  font-size:0.8rem;
+  margin-top:8px;
+  font-size:0.85rem;
   color:#2563eb;
   font-weight:600;
   text-decoration:none;
+}
+
+.project a:hover{
+  text-decoration:underline;
 }
 
 /* Education */
@@ -160,10 +176,15 @@ body{
   margin-top:30px;
 }
 
-/* Responsive */
+/* Responsive Layout */
 @media(max-width:900px){
   .main{
     flex-direction:column;
+  }
+
+  .profile-card{
+    position:relative;
+    top:0;
   }
 }
 </style>
@@ -176,7 +197,7 @@ body{
 <!-- LEFT SIDE -->
 <div class="left">
   <div class="profile-card">
-    <img src="images/photo.jpg">
+    <img src="images/photo.jpg" alt="photo">
 
     <h1>Sourab Khan</h1>
     <div class="role">Data Analyst</div>
@@ -201,7 +222,6 @@ body{
       <div class="skill">Excel</div>
       <div class="skill">Power BI</div>
     </div>
-
   </div>
 </div>
 
@@ -213,32 +233,32 @@ body{
   <div class="projects-grid">
 
     <div class="card project">
-      <img src="images/datawarehouse.jpg">
+      <img src="images/datawarehouse.jpg" alt="">
       <h3>Data Warehouse & SQL Analytics</h3>
       <p>Built modern data warehouse with optimized ETL pipelines.</p>
       <a href="https://github.com/SourabKhan/sql-data-warehouse-project" target="_blank">View Project →</a>
     </div>
 
     <div class="card project">
-      <img src="images/zomato.jpg">
+      <img src="images/zomato.jpg" alt="">
       <h3>Zomato Data Analysis</h3>
       <p>Performed EDA and pricing analysis using Python.</p>
       <a href="https://github.com/SourabKhan/Zomato-Data-Analysis-Project" target="_blank">View Project →</a>
     </div>
 
     <div class="card project">
-      <img src="images/uber.jpg">
+      <img src="images/uber.jpg" alt="">
       <h3>Uber Analytics Dashboard</h3>
       <p>Interactive Power BI dashboards with KPIs and location analysis.</p>
       <a href="https://github.com/SourabKhan/Uber-Data-Analytics-Dashboard-in-Power-Bi" target="_blank">View Project →</a>
     </div>
 
     <div class="card project">
-      <img src="images/pizza.jpg">
+      <img src="images/pizza.jpg" alt="">
       <h3>Pizza Sales Analysis</h3>
-      <p>Analyzed pizza store sales data using SQL and Power BI to deliver actionable insights for improving sales, marketing, inventory, and operations.</p>
+      <p>Analyzed pizza store sales data using SQL and Power BI to deliver actionable insights.</p>
       <a href="https://github.com/SourabKhan/Pizza-Sales-Analysis" target="_blank">View Project →</a>
-    </div>    
+    </div>
 
   </div>
 
