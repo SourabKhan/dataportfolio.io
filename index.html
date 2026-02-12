@@ -21,6 +21,7 @@ body{
   color:#222;
 }
 
+/* MAIN LAYOUT */
 .main{
   display:flex;
   max-width:1200px;
@@ -108,19 +109,12 @@ body{
 /* PROJECT GRID - Mobile First */
 .projects-grid{
   display:grid;
-  grid-template-columns:1fr;
+  grid-template-columns:1fr; /* Mobile */
   gap:20px;
 }
 
-/* Tablet */
-@media (min-width:768px){
-  .projects-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-/* Desktop */
-@media (min-width:1100px){
+/* Desktop = 2 columns */
+@media (min-width:900px){
   .projects-grid{
     grid-template-columns:repeat(2,1fr);
   }
@@ -171,12 +165,12 @@ body{
   text-decoration:underline;
 }
 
-/* Education */
+/* EDUCATION */
 .education{
   margin-top:30px;
 }
 
-/* Responsive Layout */
+/* STACK LAYOUT FOR MOBILE */
 @media(max-width:900px){
   .main{
     flex-direction:column;
